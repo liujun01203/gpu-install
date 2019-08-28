@@ -1,7 +1,7 @@
 # Ceph  迁移
 ## Ceph 机器初始化
 
-1. nullmax账号sudo免密码
+1. ceph账号sudo免密码
 
    ```
    echo "ceph ALL = (root) NOPASSWD:ALL" |sudo tee /etc/sudoers.d/ceph
