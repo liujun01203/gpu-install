@@ -4,12 +4,12 @@
 1. nullmax账号sudo免密码
 
    ```
-   echo "nullmax ALL = (root) NOPASSWD:ALL" |sudo tee /etc/sudoers.d/nullmax
-   sudo chmod 0440 /etc/sudoers.d/nullmax
+   echo "ceph ALL = (root) NOPASSWD:ALL" |sudo tee /etc/sudoers.d/ceph
+   sudo chmod 0440 /etc/sudoers.d/ceph
    ```
   
 2. hostname 修改 
-   sudo hostnamectl  set-hostname tg-platform-iaaas003.nullmax.lan
+   sudo hostnamectl  set-hostname xxx
 2. 无密码访问本机器
 3. 修改／etc／hosts
 4. sudo apt-get update 
@@ -26,10 +26,10 @@
 ## Ceph 添加osd
 
 1.  安装ceph 包
-    ceph-deploy install tg-platform-iaaas002
+    ceph-deploy install xxx
 
 2.  部署osd
-    ceph-deploy osd create  --data  /dev/sdc tg-platform-iaaas002
+    ceph-deploy osd create  --data  /dev/sdc xxx
     
 ## ceph 删除osd
     ceph osd out 0
@@ -38,7 +38,7 @@
     
     
 ## Ceph 添加mon
-    ceph-deploy  mon add tg-platform-iaaas003
+    ceph-deploy  mon add xxx
     
 ## Ceph 删除mon
   1. 停止
@@ -48,10 +48,10 @@
 ## Ceph 添加RGW
 
 ## Ceph 添加mgr
-    ceph-deploy  mgr create tg-platform-iaaas001
+    ceph-deploy  mgr create xxx
 
 ## ceph 添加mds
-    ceph-deploy  mds create tg-platform-iaaas001
+    ceph-deploy  mds create xxx
     
 ## ceph 删除mds
     停止进程
