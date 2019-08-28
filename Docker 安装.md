@@ -10,7 +10,7 @@
 7. sudo apt-get install docker-ce=19.03.1~3-0~ubuntu-xenial docker-ce-cli=19.03.1~3-0~ubuntu-xenial containerd.io=1.2.6-3
 8. sudo docker run hello-world  //check
 9. sudo groupadd docker
-10. sudo usermod -aG docker nullmax
+10. sudo usermod -aG docker ceph
 11. sudo systemctl enable  docker
 12. sudo systemctl start docker 
 
